@@ -261,12 +261,16 @@
   _previousFirstResponder = nil;
 }
 
-- (void)loadView
-{
-  if (_view != nil) {
-    self.view = _view;
-    _view = nil;
-  }
+// - (void)loadView
+// {
+//   if (_view != nil) {
+//     self.view = _view;
+//     _view = nil;
+//   }
+// }
+
+- (UIView *)view {
+    return _view;
 }
 
 @end
